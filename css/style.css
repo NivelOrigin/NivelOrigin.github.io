@@ -18,6 +18,12 @@ html {
     background-color: black;
 }
 
+body hr {
+    border-top: solid 1px white;
+    margin: 10px;
+    padding: 10px;
+}
+
 .navbar-brand {
     font-family: "Parisienne";
     border: solid 1px #a0a0a0;
@@ -57,4 +63,24 @@ html {
 
 .white-span {
     color: white;
+}
+
+.order-h1 {
+    margin: 10px 0 30px 0;
+    font-family: "Parisienne";
+}
+
+table img {
+    width: 70px;
+    height: 90px;
+}
+
+table td {
+    font-family: "Parisienne";
+    font-size: x-large;
+}
+
+#map {
+    height: 96%;
+    width: 96%;
 }

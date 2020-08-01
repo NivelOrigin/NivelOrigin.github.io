@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="./.">W</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link font-style1" href="./.">Kezdőlap</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-style1" href="./invitation.html">Meghívók</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-style1" href="./order.html">Rendelés</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-style1" href="./contact.html">Elérhetőségek</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <a class="font-style1 white-span" href="./registration.html" >Regisztráció/</a><a class="font-style1 white-span" href="./login.html"> Bejelentkezés</a>
-          </form>
-        </div>
-      </nav>
 
-      <div class="main-div">
-        <form class="text-light">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="name">Keresztnév</label>
-              <input type="name" class="form-control" name="name" placeholder="Kiss János">
-            </div>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="password">Jelszó</label>
-            <input type="password" class="form-control" name="password" placeholder="******">
-          </div><div class="form-group col-md-6">
-            <label for="password">Jelszó megerősítése</label>
-            <input type="password" class="form-control" name="password" placeholder="******">
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="./.">W</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link font-style1" href="./.">Kezdőlap</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-style1" href="./invitation.html">Meghívók</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-style1" href="./order.html">Rendelés</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-style1" href="./contact.html">Elérhetőségek</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a class="font-style1 white-span" href="./registration.html">Regisztráció/</a><a class="font-style1 white-span"
+          href="./login.html"> Bejelentkezés</a>
+      </form>
+    </div>
+  </nav>
+
+  <div class="main-div">
+    <form class="text-light">
+      <div class="form-row">
+        <div class="form-group col-md-4"></div>
+        <div class="form-group col-md-4">
+          <label for="name">E-mail cím</label>
+          <input type="name" class="form-control" name="name" placeholder="kiss.janos@yahoo.com">
+        </div>
+        <div class="form-group col-md-4"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4"></div>
+        <div class="form-group col-md-4">
+          <label for="password">Jelszó</label>
+          <input type="password" class="form-control" name="password" placeholder="******">
+          <div class="form-group col-md-4"></div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4"></div>
+        <div class="form-group col-md-4">
+          <label for="password">Jelszó megerősítése</label>
+          <input type="password" class="form-control" name="password" placeholder="******">
+        </div>
+        <div class="form-group col-md-4"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4"></div>
+        <div class="form-group col-md-4">
           <div class="form-group">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -59,9 +76,13 @@
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Regisztráció</button>
-        </form>
-    </div>
-    
+          <button type="submit" class="btn btn-dark">Regisztráció</button>
+        </div>
+        <div class="form-group col-md-4"></div>
+      </div>
+    </form>
+  </div>
+
 </body>
+
 </html>
