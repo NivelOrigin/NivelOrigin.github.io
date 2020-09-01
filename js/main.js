@@ -20,3 +20,13 @@ function showSumPrice(price = 700, amountNumber = 1) {
         showAmount.innerHTML = amount;
     }
 }
+
+function hider() {
+    let checkBox = document.getElementById("check-tax");
+    let text = document.getElementById("hidden-row");
+    if (checkBox.checked == true){
+      text.setAttribute("class" , "form-row");
+    } else {
+       text.setAttribute("class" , "form-row hide");
+    }
+  }

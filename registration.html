@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <!-- *******************Navigationbar*************************** -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="./.">W</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,11 +20,19 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link font-style1" href="./.">Kezdőlap</span></a>
+        <li class="nav-item active">
+          <a class="nav-link font-style1" href="./.">Kezdőlap <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link font-style1" href="./invitation.html">Meghívók</a>
+        <li class="nav-item dropdown font-style1">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Meghívók
+          </a>
+          <div class="dropdown-menu font-style2" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./wedding-inv.html">Esküvői</a>
+            <a class="dropdown-item" href="./invitation.html">Születésnapi</a>
+            <a class="dropdown-item" href="./invitation.html">Babaváró</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link font-style1" href="./order.html">Rendelés</a>
@@ -40,7 +49,7 @@
   </nav>
 
   <div class="main-div">
-    <form class="text-light">
+    <form class="font-color">
       <div class="form-row">
         <div class="form-group col-md-4"></div>
         <div class="form-group col-md-4">
@@ -82,7 +91,8 @@
       </div>
     </form>
   </div>
-
+  <script src="lib/node_modules/jquery/dist/jquery.slim.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
