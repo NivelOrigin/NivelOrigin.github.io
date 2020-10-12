@@ -1,144 +1,79 @@
-@font-face {
-    font-family: "Parisienne";
-    src: url("font/Parisienne-Regular.ttf");
-}
-@font-face {
-    font-family: "Pacifico";
-    src: url("font/Pacifico-Regular.ttf");
-}
-@font-face {
-    font-family: "Italianno";
-    src: url("font/Italianno-Regular.ttf");
+*{
+	padding:0;
+    margin: 0 0 0 1.10px;
 }
 
-html {
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
+/*	general	*/
+
+section{
+    padding: 50px 0;
 }
 
-body hr {
-    border-top: solid 1px white;
-    margin: 10px;
-    padding: 10px;
-}
-
-.navbar-brand {
-    font-family: "Parisienne";
-    border: solid 1px #a0a0a0;
-    padding: 0 8px 0 5px;
-    box-shadow: 0px 0px 3px #a0a0a0;
-}
-
-.font-style1 {
-    font-family: "Italianno";
-    font-size: x-large;
-}
-
-.font-style2 {
-    font-family: "Parisienne";
-    padding: 15px 0 10px 0;
-}
-
-/* ******************main-divhez tartozó**************** elemek */
-.main-div {
-    width: 60%;
-    height: 85%;
-    background-color: black;
-    position: absolute;
-    left: 20%;
-    margin-top: 20px;
-    padding: 15px;
-    box-shadow: 0 0 5px black;
-    overflow: auto;
-}
-
-.main-div::-webkit-scrollbar {
-    width: 8px;
-    background-color: black;
-}
-
-
-.main-div::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(230, 230, 230, 0.3);
-  }
-
-.main-div::-webkit-scrollbar-thumb {
-    background-color: grey;
-    outline: 1px solid slategrey;
-}
-
-.test-div {
-    background-color: white;
-}
-
-/* *************************************************** */
-.font-color {
-    color: darkgray;
-}
-
-.white-span {
-    color: white;
-}
-
-.white-span:hover {
-    color: lightgray;
-}
-
-.order-h1 {
-    margin: 10px 0 30px 0;
-    font-family: "Parisienne";
+.lable{
     text-align: center;
 }
 
-table img {
-    width: 70px;
-    height: 90px;
+.contact{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    font-size: 18px;
+    border: 2px solid #3F6184;
+    padding:5px 10px;
+    color: #3F6184;
+    margin-bottom: 30px;
+	background:transparent;
 }
 
-table td {
-    font-family: "Parisienne";
-    font-size: x-large;
+/*	gallery */
+
+.gallery-title{
+    font-size: 36px;
+    color: #3F6184;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.filter-button{
+    font-size: 18px;
+    border: 2px solid #3F6184;
+	padding:5px 10px;
+    text-align: center;
+    color: #3F6184;
+    margin-bottom: 30px;
+	background:transparent;
+}
+.filter-button:hover,
+.filter-button:focus,
+.filter-button.active{
+    color: #ffffff;
+    background-color:#3F6184;
+	outline:none;
+}
+.gallery_product{
+    margin: 0px;
+	padding:0;
+	position:relative;
+}
+.gallery_product .img-info{
+	position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+	overflow:hidden;
+	color:#fff;
+	top:0;
+	display:none;
+	   -webkit-transition: 2s;
+    transition: 2s;
 }
 
-#map {
-    height: 96%;
-    width: 96%;
-}
-/* *****************order.html****************** része */
-div .hide {
-    display: none;
+.gallery_product:hover .img-info{
+	display:block;
+   -webkit-transition: 2s;
+    transition: 2s;
 }
 
-#order-form {
-    margin: 0 10% 0 10%;
-}
-
-/* *************wedding-inv.html**************** része */
-div .popover-style {
-    padding: 0;
-}
-
-div .popover-style:hover {
-    position:relative;
-    right:5px; 
-    bottom:5px;
-}
-
-#wedding-gallery {
-    margin-left: 12%;
-    margin-top: 3%;
-}
-
-#wedding-gallery div img {
-    border-radius: 20px;
-}
-
-#wedding-gallery div img:hover{
-    opacity: 0.7;
-}
-
-#wedding-gallery div {
-    padding: 0;
-}
+/*	end gallery */
