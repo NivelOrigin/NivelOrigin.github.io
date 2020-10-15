@@ -1,6 +1,6 @@
 *{
 	padding:0;
-    margin: 0 0 0 1.10px;
+    margin: 0;
 }
 
 /*	general	*/
@@ -32,7 +32,14 @@ section{
     color: #3F6184;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
+}
+.gallery-title-h3{
+    font-size: 20px;
+    color: #3F6184;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
 }
 .filter-button{
     font-size: 18px;
@@ -51,9 +58,10 @@ section{
 	outline:none;
 }
 .gallery_product{
-    margin: 0px;
+  
+  margin: 0px;
 	padding:0;
-	position:relative;
+  position:relative;
 }
 .gallery_product .img-info{
 	position: absolute;
@@ -69,11 +77,19 @@ section{
 	   -webkit-transition: 2s;
     transition: 2s;
 }
-
 .gallery_product:hover .img-info{
 	display:block;
    -webkit-transition: 2s;
     transition: 2s;
 }
+.gallery-img {
+  width: 456.25px;
+  height: 250px;
+}
+
 
 /*	end gallery */
+
+/*   lightbox   */
+
+

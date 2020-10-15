@@ -23,9 +23,22 @@ $(document).ready(function(){
 });
 /*	end gallery */
 
-$(document).ready(function(){
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-});
+
+/*     gallery-filter   */
+
+const buttons = document.querySelectorAll(".filter-button")
+const images = document.querySelectorAll(".gallery_product")
+
+function imagesCheck(){
+    for (let i = 0; i < images.length; i++) {
+        if (images[i].style.display !== "none") {
+            console.log("talalt")
+        } else {
+            console.log("nem")
+        }
+      
+}}
+
+/*if (images.hasOwnProperty)
+images[i].getAttribute(data-lightbox)
+*/
