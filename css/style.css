@@ -14,14 +14,13 @@ section{
 }
 
 .contact{
-    position: absolute;
-    right: 0px;
+    position: static;
     width: 300px;
     font-size: 18px;
     border: 2px solid #3F6184;
     padding:5px 10px;
     color: #3F6184;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 	background:transparent;
 }
 
@@ -39,7 +38,7 @@ section{
     color: #3F6184;
     text-align: center;
     font-weight: 400;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
 }
 .filter-button{
     font-size: 18px;
