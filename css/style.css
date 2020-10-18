@@ -1,94 +1,131 @@
-*{
-	padding:0;
-    margin: 0;
+html {
+    margin: 40px 0 0 0;
+    background-color: #DF263C;
 }
 
-/*	general	*/
-
-section{
-    padding: 50px 0;
+body {
+    background-color: transparent;
 }
 
-.lable{
-    text-align: center;
+.carousel-inner {
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
 }
 
-.contact{
-    position: static;
-    width: 300px;
-    font-size: 18px;
-    border: 2px solid #3F6184;
-    padding:5px 10px;
-    color: #3F6184;
-    margin-bottom: 10px;
-	background:transparent;
+#myTab {
+    background-color: transparent;
 }
 
-/*	gallery */
+.menu-decoration {
+    z-index: -1;
+    top: 0%;
+    position: absolute;
+    height: 210%;
+    width: 97.4%;
+    border-radius: 0 0 80% 80%;
+    background: #DE8A94;
+    -webkit-box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.75);
 
-.gallery-title{
-    font-size: 36px;
-    color: #3F6184;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.gallery-title-h3{
-    font-size: 20px;
-    color: #3F6184;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-.filter-button{
-    font-size: 18px;
-    border: 2px solid #3F6184;
-	padding:5px 10px;
-    text-align: center;
-    color: #3F6184;
-    margin-bottom: 30px;
-	background:transparent;
-}
-.filter-button:hover,
-.filter-button:focus,
-.filter-button.active{
-    color: #ffffff;
-    background-color:#3F6184;
-	outline:none;
-}
-.gallery_product{
-  
-  margin: 0px;
-	padding:0;
-  position:relative;
-}
-.gallery_product .img-info{
-	position: absolute;
-    background: rgba(0,0,0,0.5);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 20px;
-	overflow:hidden;
-	color:#fff;
-	top:0;
-	display:none;
-	   -webkit-transition: 2s;
-    transition: 2s;
-}
-.gallery_product:hover .img-info{
-	display:block;
-   -webkit-transition: 2s;
-    transition: 2s;
-}
-.gallery-img {
-  width: 456.25px;
-  height: 250px;
+    background: rgba(223,38,60,1);
+    background: -moz-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(46,46,46,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,38,60,1)), color-stop(100%, rgba(46,46,46,1)));
+    background: -webkit-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(46,46,46,1) 100%);
+    background: -o-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(46,46,46,1) 100%);
+    background: -ms-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(46,46,46,1) 100%);
+    background: linear-gradient(to bottom, rgba(223,38,60,1) 0%, rgba(46,46,46,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df263c', endColorstr='#2e2e2e', GradientType=0 );
 }
 
+.nav-bar-item:focus {
+    color: #DE8A94;
+    border-radius: 0 0 15px 15px;
+    background-color:#292929;
+    border-top: #292929 solid 3px;
+}
 
-/*	end gallery */
+.nav-bar-buttons {
+    color: black;
+    border-top: #DF263C solid 3px;
+}
 
-/*   lightbox   */
+.nav-bar-buttons:hover {
+    color: #DE8A94;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(223,38,60,0.4);
+    -webkit-box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.5);
+    border-top: #292929 solid 3px;
+}
 
+.tab-decoration {
+    height: 100%;
+    margin: 60px 15px 0 15px;
+    padding: 0 1px 0 1px ;
+    background: rgba(223,38,60,1);
+    background: -moz-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(41,41,41,1) 36%, rgba(41,41,41,1) 66%, rgba(223,38,60,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,38,60,1)), color-stop(36%, rgba(41,41,41,1)), color-stop(66%, rgba(41,41,41,1)), color-stop(100%, rgba(223,38,60,1)));
+    background: -webkit-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(41,41,41,1) 36%, rgba(41,41,41,1) 66%, rgba(223,38,60,1) 100%);
+    background: -o-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(41,41,41,1) 36%, rgba(41,41,41,1) 66%, rgba(223,38,60,1) 100%);
+    background: -ms-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(41,41,41,1) 36%, rgba(41,41,41,1) 66%, rgba(223,38,60,1) 100%);
+    background: linear-gradient(to bottom, rgba(223,38,60,1) 0%, rgba(41,41,41,1) 36%, rgba(41,41,41,1) 66%, rgba(223,38,60,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df263c', endColorstr='#df263c', GradientType=0 );
+}
 
+.border-color {
+    height: 100%;
+    padding: 10px 20px 10px 20px;
+    background-color: #DF263C;
+}
+
+.main-menu {
+    position: relative;
+    background-color: #DF263C;
+    width: 99.5%;
+    height: 100%;
+    padding-right: 30px;
+}
+.border-color-menu {
+    position: relative;
+    float: left;
+    top: 10px;
+    left: 10px;
+    width: 20%;
+    height: 80%;
+    background: rgba(223,38,60,1);
+    background: -moz-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(41,41,41,1) 36%, rgba(41,41,41,1) 66%, rgba(223,38,60,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,38,60,1)), color-stop(36%, rgba(41,41,41,1)), color-stop(66%, rgba(41,41,41,1)), color-stop(100%, rgba(223,38,60,1)));
+    background: -webkit-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(41,41,41,1) 36%, rgba(41,41,41,1) 66%, rgba(223,38,60,1) 100%);
+    background: -o-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(41,41,41,1) 36%, rgba(41,41,41,1) 66%, rgba(223,38,60,1) 100%);
+    background: -ms-linear-gradient(top, rgba(223,38,60,1) 0%, rgba(41,41,41,1) 36%, rgba(41,41,41,1) 66%, rgba(223,38,60,1) 100%);
+    background: linear-gradient(to bottom, rgba(223,38,60,1) 0%, rgba(41,41,41,1) 36%, rgba(41,41,41,1) 66%, rgba(223,38,60,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df263c', endColorstr='#df263c', GradientType=0 );
+}
+
+.main-menu-buttons a {
+    color: #292929;
+    border: solid 1px #292929;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 5px;
+}
+
+.main-menu-buttons a:hover {
+    color:#DE8A94;
+    border: solid 1px #DE8A94;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.main-news {
+    padding-left: 20px;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    top: 10px;
+    left: 10px;
+    width: 78%;
+    height: 100%;
+}
